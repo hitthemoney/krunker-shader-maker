@@ -7,6 +7,28 @@ var mat = (color) => {
     })
 }
 
+var isTopHidden = false;
+
+var hideTop = () => {
+    isTopHidden = !isTopHidden;
+    if (isTopHidden) {
+        document.getElementById("top").style.display = "none";
+    } else {
+        document.getElementById("top").style.display = "";
+    }
+}
+
+document.addEventListener("keydown", (event) => {
+    switch (event.key) {
+        case "h":
+        case "H":
+            hideTop();
+            break;
+    }
+})
+
+if (!!(new URL(window.location.href)).searchParams.get("hideGui")) hideTop();
+
 var downloadURL = (url, name = "My_Krunker_Shader.zip") => {
     let anchor = document.createElement("a");
     anchor.style = "display: none;";

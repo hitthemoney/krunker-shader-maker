@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krunker Shader Maker</title>
+    <meta name="description" content="An easy way to create Krunker.io Shaders">
+    <meta name="keywords" content="krunker, shader, krunker shader">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="">
+    <meta name="og:title" content="">
+    <meta name="og:url" content="https://hitthemoney.com/krunker-shader-maker">
+    <meta name="og:site_name" content="">
+    <meta name="og:type" content="website">
     <style>
         @font-face {
             font-family: "FFF Forward";
@@ -30,11 +39,43 @@
 
         canvas {
             display: block;
-            position: absolute;
+            /* position: absolute; */
             top: 0;
             left: 0;
             width: 100% !important;
             height: 100% !important;
+        }
+
+        #top {
+            padding: 5px 10px 5px 10px;
+            color: #fff;
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #000;
+            border-radius: 10px;
+        }
+
+        a {
+            color: rgb(0, 157, 255);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #top h1 {
+            font-size: 1.15em;
+        }
+
+        #top h3 {
+            font-size: 0.9em;
+        }
+
+        .dg.main.a {
+            margin-right: 10px !important;
         }
 
         /* Extra Dat GUI Styles */
@@ -56,6 +97,10 @@
 </head>
 
 <body>
+    <div id="top">
+        <h1>Krunker Shader Maker</h1>
+        <h3>by <a href="/">hitthemoney</a></h3>
+    </div>
     <script src="./js/datgui.js"></script>
     <script src="./js/three.js"></script>
     <script src="./js/postprocessing.js"></script>
