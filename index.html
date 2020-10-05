@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krunker Shader Maker</title>
+    <style>
+        @font-face {
+            font-family: "FFF Forward";
+            src: url("./assets/main.ttf");
+        }
+
+        :root {
+            --main-gradient-col: #32e5f9;
+            --secondary-gradient-col: #a5cce1;
+        }
+
+        body,
+        html {
+            font-family: "FFF Forward";
+            background-color: var(--main-gradient-col);
+            background-image: linear-gradient(var(--main-gradient-col), var(--secondary-gradient-col));
+            margin: 0px;
+            padding: 0px;
+        }
+
+        * {
+            font-family: "FFF Forward";
+        }
+
+        canvas {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        /* Extra Dat GUI Styles */
+
+        input,
+        .slider,
+        .slider-fg {
+            border-radius: 5px !important;
+        }
+
+        .slider {
+            margin-left: 0px !important;
+        }
+
+        .close-button.close-bottom {
+            border-radius: 0px 0px 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./js/datgui.js"></script>
+    <script src="./js/three.js"></script>
+    <script src="./js/postprocessing.js"></script>
+    <script src="./js/orbitcontrols.js"></script>
+    <script src="./js/jszip.min.js"></script>
+    <script src="./js/extras.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
