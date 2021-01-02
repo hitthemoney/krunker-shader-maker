@@ -73,7 +73,7 @@ var noiseAmount = 0.005;
 
 var genShader = (final = false) => {
     var shader = {
-        credits: "Code generated on https://hitthemoney.com/krunker-shader-maker. Made by hitthemoney#5719",
+        credits: "Code generated on https://hitthemoney.com/krunker-shader-maker. Made by hitthemoney#1337",
         uniforms: {
             "tDiffuse": {
                 value: null
@@ -108,7 +108,7 @@ var genShader = (final = false) => {
         },
         fragmentShader: `
 // Code generated on https://hitthemoney.com/krunker-shader-maker
-// Made by hitthemoney#5719
+// Made by hitthemoney#1337
 
 uniform sampler2D tDiffuse;
 ${final ? `vec3 colOverlay = vec3(${colorOverlay.r}, ${colorOverlay.g}, ${colorOverlay.b})` : "uniform vec3 colOverlay"};
@@ -171,7 +171,7 @@ void main() {
         `,
         vertexShader: `
 // Code generated on https://hitthemoney.com/krunker-shader-maker
-// Made by hitthemoney#5719
+// Made by hitthemoney#1337
 
 varying vec2 vUv;
 void main() {
